@@ -4,6 +4,8 @@
   "description": "For food, by Sachin",
   "main": "index.js",
   "scripts": {
+    "start": "npx parcel index.html",
+    "build":"parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -24,7 +26,8 @@
   "homepage": "https://github.com/sac6inarya/FoodE#readme",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.17.0"
   },
   "devDependencies": {
     "parcel": "^2.10.0",
