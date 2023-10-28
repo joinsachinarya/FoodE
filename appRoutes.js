@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
-import Body from "./src/components/Body";
+import RestaurentList from "./src/components/RestaurentList";
 import About from "./src/components/About";
 import App from "./App";
+import ErrorComponent from "./src/components/ErrorComponent";
 
 const appRouter = createBrowserRouter([
     {
@@ -10,11 +11,15 @@ const appRouter = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Body />
+                element: <RestaurentList />
             },
             {
                 path: "about",
                 element: <About />
+            },
+            {
+                path: "*",
+                errorElement: <ErrorComponent />,
             }
         ]
     }

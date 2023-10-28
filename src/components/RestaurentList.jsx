@@ -1,7 +1,7 @@
 import React from 'react'
 import useOnline from '../hooks/useOnline';
 
-const Body = () => {
+const RestaurentList = () => {
     const isOnline = useOnline();
 
     if (!isOnline) return (
@@ -9,8 +9,8 @@ const Body = () => {
     )
 
     return (
-        <div>Body</div>
+        <div>RestaurentList</div>
     )
 }
 
-export default Body;
+export default RestaurentList;
