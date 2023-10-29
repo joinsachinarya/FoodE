@@ -14,3 +14,12 @@ export const ShimmerRestaurantCard = () => {
         </div>
     )
 }
+
+export const ShimmerRestaurantDetails = () => (
+    <div className='flex flex-col gap-4 w-[60%] h-[80%] rounded-lg  items-center bg-white animate-pulse p-4'>
+        <div className=' bg-slate-200 w-[100%]  h-[50%] animate-pulse' />
+        <div className='bg-slate-200 w-[100%]  h-[10%] animate-pulse' />
+        <div className='bg-slate-200 w-[100%]  h-[10%] animate-pulse' />
+        <div className='bg-slate-200 w-[100%]  h-[10%] animate-pulse' />
+    </div>
+)

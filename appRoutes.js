@@ -3,6 +3,7 @@ import RestaurantList from "./src/components/RestaurantList";
 import About from "./src/components/About";
 import App from "./App";
 import ErrorComponent from "./src/components/ErrorComponent";
+import RestaurantDetails from "./src/components/RestaurantDetails";
 
 const appRouter = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "*",
                 errorElement: <ErrorComponent />,
+            },
+            {
+                path: "/restaurants/:resId",
+                element: <RestaurantDetails />
             }
         ]
     }
