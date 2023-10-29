@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import RestaurentList from "./src/components/RestaurentList";
+import RestaurantList from "./src/components/RestaurantList";
 import About from "./src/components/About";
 import App from "./App";
 import ErrorComponent from "./src/components/ErrorComponent";
@@ -11,7 +11,7 @@ const appRouter = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <RestaurentList />
+                element: <RestaurantList />
             },
             {
                 path: "about",
