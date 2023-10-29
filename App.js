@@ -9,11 +9,11 @@ const App = () => {
     const isOnline = useOnline();
 
     return (
-        <>
+        <div className="">
             <Header />
             {!isOnline ? <Offline /> : <Outlet />}
             <Footer />
-        </>
+        </div>
     )
 }
 
